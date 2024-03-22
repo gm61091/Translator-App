@@ -9,37 +9,46 @@
 </head>
 
 <body>
-    <h1>Translator App</h1>
-    <body>
-        <h1>Translator App</h1>
+    <div class="container">
+        <h1 class="h1">Translator App</h1>
       
-        <div>
-            <label for="sourceLanguage">Source Language:</label>
-            <select id="sourceLanguage" placeholder="Select source language"></select>
+        <div class="language-container">
+            <div>
+                <label for="sourceLanguage">Source Language:</label>
+                <select id="sourceLanguage" placeholder="Select source language"></select>
+            </div>
+            
+            <div>
+                <label for="targetLanguage">Target Language</label>
+                <select id="targetLanguage" placeholder="Select target language"></select>
+            </div>
         </div>
         
-        <div>
-            <label for="targetLanguage">Target Language:</label>
-            <select id="targetLanguage" placeholder="Select target language"></select>
+        <div class="container">
+            <div class="input-container">
+                <div class="input-box">
+                    
+                    <textarea id="inputText" placeholder="Enter text to translate"></textarea>
+                </div>
+                
+                <button id="translateButton">Translate</button>
+            </div>
+        
+            <div class="result-container" id="resultContainer">
+                <div class="result-box">
+                    
+                    <div id="translatedText"></div>
+                </div>
+            </div>
         </div>
         
-        <div>
-            <label for="inputText">Enter Text:</label>
-            <input type="text" id="inputText" placeholder="Enter text to translate">
-        </div>
         
-        <button id="translateButton">Translate</button>
         
-        <div>
-            <label for="translatedText">Translated Text:</label>
-            <div id="translatedText"></div>
-        </div>
-    
-        <script src="app.js"></script> 
-    </body>
-    
+        
+        
+    </div>
 
     <script src="app.js"></script> 
-  
 </body>
+
 </html>

@@ -127,7 +127,6 @@ const languages = [
 const sourceLanguageSelect = document.getElementById('sourceLanguage');
 const targetLanguageSelect = document.getElementById('targetLanguage');
 
-// Populate source and target language dropdowns
 languages.forEach(language => {
     const option = document.createElement('option');
     option.value = language.code;
@@ -151,7 +150,6 @@ async function fetchLanguages() {
         const response = await fetch(getLanguagesUrl, options);
         if (response.ok) {
             const data = await response.json();
-            // Assuming the API returns an array of language objects with 'code' and 'name' properties
             data.languages.forEach(language => {
                 const option = document.createElement('option');
                 option.value = language.code;
@@ -199,9 +197,15 @@ async function translateText() {
         console.error('Translation error:', error);
     }
 }
-
-// Event listener for translate button click
 document.getElementById('translateButton').addEventListener('click', translateText);
 
-// Fetch languages when the page loads
-fetchLanguages();
+document.getElementById('translateButton').addEventListener('click', function() {
+    // Your translation logic here
+    
+    // Show the result container after translation
+    document.getElementById('resultContainer').style.display = 'block';
+});
+
+
+
+ fetchLanguages();
