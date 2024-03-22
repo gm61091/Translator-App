@@ -136,7 +136,6 @@ languages.forEach(language => {
 });
 
 
-// Fetch list of available languages
 async function fetchLanguages() {
     const options = {
         method: 'GET',
@@ -200,9 +199,7 @@ async function translateText() {
 document.getElementById('translateButton').addEventListener('click', translateText);
 
 document.getElementById('translateButton').addEventListener('click', function() {
-    // Your translation logic here
-    
-    // Show the result container after translation
+   
     document.getElementById('resultContainer').style.display = 'block';
 });
 
