@@ -7,11 +7,14 @@ The Translator App is a web application designed to translate text from one lang
 Features:
 
 Input text box: Users can enter text to be translated.
+
 Source and target language dropdowns: Users can select the source and target languages for translation.
+
 Translate button: Clicking this button triggers the translation process.
+
 Translated text display: The translated text is displayed to the user once the translation is complete.
-API Used:
-The app utilizes the RapidAPI Text Translator API for language translation functionality.
+
+API Used: The app utilizes the RapidAPI Text Translator API for language translation functionality.
 
 Technologies:
 
