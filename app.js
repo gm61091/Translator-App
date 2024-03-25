@@ -164,7 +164,7 @@ async function fetchLanguages() {
     }
 }
 
-// Translate text based on entered source and target languages
+
 async function translateText() {
     const sourceLanguage = sourceLanguageInput.value;
     const targetLanguage = targetLanguageInput.value;
