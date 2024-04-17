@@ -31,7 +31,7 @@ app.post('/register', async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, saltRounds);
         // Store the user data in the database
          await db.one(`
-            INSERT INTO translateuser (name, email, password) 
+            INSERT INTO translateusers (name, email, password) 
             VALUES ($1, $2, $3) 
             RETURNING id`, [name, email, hashedPassword]);
         console.log('new registered user');
@@ -55,7 +55,7 @@ app.post('/login', async (req, res) => {
         const { email, password } = req.body;
         
         // Find the user by email in the database
-        const user = await db.oneOrNone('SELECT * FROM translateuser WHERE email = $1', email);
+        const user = await db.oneOrNone('SELECT * FROM translateusers WHERE email = $1', email);
         if (user) {
             // Compare hashed password with user input
             const passwordMatch = await bcrypt.compare(password, user.password);
