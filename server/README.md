@@ -1,4 +1,3 @@
-
 Title: Translator App
 
 Summary:
@@ -25,3 +24,29 @@ JavaScript
 Responsiveness:
 
 The app is responsive and adapts to different screen sizes for a seamless user experience on various devices.
+
+ChatGPT
+Translator App
+Summary:
+The Translator App is a full-stack web application designed to facilitate language translation. Leveraging server-side technologies such as bcrypt, Express.js, pg-promise, and CORS, this application ensures secure and efficient translation services. Users can input text in a source language, select a target language, and click the translate button to receive the translated text. The app integrates the RapidAPI Text Translator API to perform accurate and reliable language translations.
+
+Features:
+Input Text Box: Users can input text to be translated.
+Source and Target Language Dropdowns: Users can select the source and target languages for translation.
+Translate Button: Initiates the translation process.
+Translated Text Display: Displays the translated text to the user.
+API Used:
+The app utilizes the RapidAPI Text Translator API for language translation functionality.
+
+Technologies:
+HTML
+CSS
+JavaScript
+bcrypt
+Express.js
+pg-promise
+CORS
+Responsiveness:
+The app is responsive and ensures a seamless user experience across different screen sizes and devices.
+
+
