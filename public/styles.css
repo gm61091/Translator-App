@@ -79,9 +79,15 @@ body {
     font-size: 25px;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     margin-bottom: 10px;
 }
+.language-item {
+
+    margin-right: 120px; /* Adjust as needed */
+    margin-left: 120px;
+}
+
 
 
 select {
