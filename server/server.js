@@ -43,10 +43,10 @@ app.post('/register', async (req, res) => {
     }
 });
 
-app.get('/', async (req, res) => {
-    const allUsers = await  db.many('SELECT * FROM translateuser');
-    res.send(allUsers);
-});
+// app.get('/', async (req, res) => {
+//     const allUsers = await  db.many('SELECT * FROM translateuser');
+//     res.send(allUsers);
+// });
 
 
 app.post('/login', async (req, res) => {
