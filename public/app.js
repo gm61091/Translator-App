@@ -131,6 +131,7 @@ languages.forEach(language => {
     const option = document.createElement('option');
     option.value = language.code;
     option.textContent = language.name;
+
     sourceLanguageSelect.appendChild(option.cloneNode(true));
     targetLanguageSelect.appendChild(option.cloneNode(true));
 });
@@ -197,6 +198,7 @@ async function translateText() {
     }
 }
 document.getElementById('translateButton').addEventListener('click', translateText);
+
 
 document.getElementById('translateButton').addEventListener('click', function() {
    

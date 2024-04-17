@@ -10,6 +10,63 @@ h1 {
 
 
 
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #dbf3f2;
+    font-size: 16px; /* Increase font size */
+}
+
+.container2 {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Ensure the container takes only the necessary width */
+    text-align: left; /* Left align the content within the container */
+}
+
+
+.form-control {
+    font-size: 18px; 
+}
+
+.h5 {
+    text-align: center;
+}
+
+.col-12 {
+    margin-bottom: 20px; /* Increase margin between form elements */
+}
+
+.btn {
+    font-size: 24px; /* Increase font size */
+    padding: 5px 15px; /* Adjust padding for bigger buttons */
+}
+
+.button {
+    width: 50%;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+
+
+
 .container {
     display: flex;
     flex-direction: column;
